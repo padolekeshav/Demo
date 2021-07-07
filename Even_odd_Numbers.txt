@@ -1,0 +1,24 @@
+using System;
+
+namespace ConsoleApp3
+{
+    class Even_odd_Numbers
+    {
+        static void Main(string[] args)
+        {
+            for(int i=1;i<=20;i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine("even numbers: " +i);
+               
+                }
+                else
+                { 
+                    Console.WriteLine("odd numbers: " +i);
+                }
+            }
+
+        }
+    }
+}
