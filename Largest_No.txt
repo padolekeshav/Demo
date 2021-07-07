@@ -1,0 +1,39 @@
+using System;
+
+namespace Calculator
+{
+    class Larger_Number
+    {
+        public static void Main(String[] args)
+        {   
+
+         Console.WriteLine("enter first number\t\t\t");
+         double  first_no =Double.Parse(Console.ReadLine());
+
+         Console.WriteLine("enter second number");
+         double second_no = Double.Parse(Console.ReadLine());
+
+         Console.WriteLine("enter third number");
+         double third_no = Double.Parse(Console.ReadLine());
+
+         Console.WriteLine("You Have Entered :");
+         Console.WriteLine("First no :"+ first_no+"\t"+"Second No :"+ second_no + "\t"+"Third No :"+third_no);
+
+            if ((first_no > second_no) && (first_no > third_no) )
+            {
+                Console.Write("First Number is Largest :" + first_no);  
+            }
+            if ((second_no > first_no) && (second_no > third_no))
+            {
+                Console.Write("Second Number is Largest :" + second_no);
+            }
+            if ((third_no > first_no) && (third_no > second_no))
+            {
+                Console.Write("Third Number is Largest :" + third_no);
+            }
+            Console.ReadLine();
+
+
+        }
+    }
+}
